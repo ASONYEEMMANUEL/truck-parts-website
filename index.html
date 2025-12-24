@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Parts For Sale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* BODY & BACKGROUND */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      background-image: url("images/background image.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* DARK OVERLAY */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      background-color: #111;
+      color: white;
+      padding: 15px;
+      margin: 0;
+      font-size: 22px;
+    }
+
+    /* SLIDESHOW */
+    .slideshow-container {
+      max-width: 900px;
+      width: 95%;
+      margin: 20px auto;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .slides {
+      display: none;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .dots {
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 4px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #333;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: white;
+      width: 95%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: left;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .contact p {
+      margin: 8px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    /* WHATSAPP BUTTON */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    /* TABLET */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 26px;
+      }
+      .contact p {
+        font-size: 16px;
+      }
+    }
+
+    /* PC */
+    @media (min-width: 1024px) {
+      .slideshow-container,
+      .contact {
+        max-width: 1000px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <h1>Quality Car Parts For Sale</h1>
+
+  <!-- SLIDESHOW -->
+  <div class="slideshow-container">
+
+    <div class="slides"><img src="images/crankshaft.jpg" loading="lazy">crankshaft</div>
+    <div class="slides"><img src="images/drums.jpg" loading="lazy">drums</div>
+    <div class="slides"><img src="images/fuel filter.jpg" loading="lazy">fuel filter</div>
+    <div class="slides"><img src="images/gas filter.jpg" loading="lazy">gass filter</div>
+    <div class="slides"><img src="images/gasket.jpg" loading="lazy">gasket</div>
+    <div class="slides"><img src="images/metal and main bearing.jpg" loading="lazy">metal and main bearing</div>
+    <div class="slides"><img src="images/oil filter.jpg" loading="lazy">oil filter</div>
+    <div class="slides"><img src="images/oil seal.jpg" loading="lazy">oil seal</div>
+    <div class="slides"><img src="images/piston.jpg" loading="lazy">piston</div>
+    <div class="slides"><img src="images/rings.jpg" loading="lazy">rings</div>
+    <div class="slides"><img src="images/sleeves.jpg" loading="lazy">sleeves</div>
+    <div class="slides"><img src="images/turbocharger.jpg" loading="lazy">turbocharger</div>
+    <div class="slides"><img src="images/waterpump.avif" loading="lazy">waterpump</div>
+
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
+    </div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Seller Name:</strong> Asonye Smanuel Lugard</p>
+    <p><strong>Phone:</strong> +234 80 358 778 92</p>
+    <p><strong>Email:</strong> carpartsshop@example.com</p>
+
+    <p><strong>Head Office:</strong><br>
+       first gate motor spare parts zuba, Nigeria
+    </p>
+
+    <p><strong>Branch Office:</strong><br>
+      Jesus line motor spare parts zuba, Nigeria
+    </p>
+
+    <p><strong>Facebook:</strong> facebook.com/asonye Samuel</p>
+    <p><strong>Instagram:</strong> instagram.com/...</p>
+  </div>
+
+  <footer>
+    © 2025 Car Parts Shop. All Rights Reserved.
+  </footer>
+
+</div>
+
+<!-- WHATSAPP CLICK TO CHAT -->
+<a href="https://wa.me/2348012345678?text=Hello%20I%20am%20interested%20in%20your%20car%20parts"
+   class="whatsapp-button" target="_blank">
+  Chat on WhatsApp
+</a>
+
+<!-- SLIDESHOW SCRIPT -->
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1;}
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+
+    setTimeout(showSlides, 3000);
+  }
+
+  function currentSlide(n) {
+    slideIndex = n - 1;
+    showSlides();
+  }
+
+  showSlides();
+</script>
+
+</body>
+</html>
